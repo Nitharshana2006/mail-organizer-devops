@@ -27,3 +27,16 @@ jobs:
 
       - name: Run the app
         run: python app.py
+
+      - name: Package application
+        run: |
+          mkdir release
+          cp app.py release/
+          cp requirements.txt release/
+          cp README.md release/
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mail-organizer-build
+          path: release/
