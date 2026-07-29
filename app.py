@@ -1,9 +1,12 @@
 # app.py - Simple Mail Organizer (Demo App for DevOps Pipeline)
 
 CATEGORIES = {
-    "Work": ["meeting", "project", "deadline", "report", "client"],
+    "Work": ["meeting", "project", "deadline", "report", "client", "invitation", "connect"],
     "Finance": ["invoice", "payment", "bank", "salary", "bill"],
     "Personal": ["family", "friend", "birthday", "vacation"],
+    "Academic": ["exam", "result", "weekend exam", "marks", "grade", "hall ticket"],
+    "Security": ["security alert", "sign-in", "login", "password", "verify"],
+    "Motivation": ["goals", "reset", "reminder", "tip"],
     "Spam": ["lottery", "winner", "free money", "click here"],
 }
 
